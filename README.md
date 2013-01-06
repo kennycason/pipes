@@ -1,3 +1,5 @@
+A start to a Data Flow programming language: http://en.wikipedia.org/wiki/Dataflow_programming
+
 YPipe ypipe = new YPipe();
 SingleFrictionPipe frictionPipe = new SingleFrictionPipe();
 SinglePipe single = new SinglePipe();
