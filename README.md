@@ -1,3 +1,4 @@
+```java
 YPipe ypipe = new YPipe();
 SingleFrictionPipe frictionPipe = new SingleFrictionPipe();
 SinglePipe single = new SinglePipe();
@@ -10,7 +11,8 @@ ypipe.right(out);
 frictionPipe.connect(ypipe);
 start.connect(frictionPipe);
 start.push(new IntegerFlow(5));
-
+```
+```
  [start]
     |
 [friction]--------\
@@ -18,8 +20,9 @@ start.push(new IntegerFlow(5));
  [ypipe]          |
     \---left---[single]
      \--right--[out]   
+```
 
-
+```
 Output: verifies flow
 pipe.pipes.SingleStartPipe@138847d
 pipe.pipes.SingleFrictionPipe@1826ac5
@@ -48,4 +51,5 @@ pipe.pipes.SinglePipe@1e55d39
 pipe.pipes.OutputPipe@14b525c
 0
 pipe.pipes.SingleFrictionPipe@1826ac5
+```
 
