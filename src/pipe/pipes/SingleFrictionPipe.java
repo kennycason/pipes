@@ -1,6 +1,6 @@
 package pipe.pipes;
 
-import pipe.flows.IntegerFlow;
+import pipe.flows.NumberFlow;
 
 
 public class SingleFrictionPipe extends AbstractPipe {
@@ -10,8 +10,8 @@ public class SingleFrictionPipe extends AbstractPipe {
 	@Override
 	public void flow() {
 		if(this.connection != null) {
-			if(flowable instanceof IntegerFlow) {
-				Integer i = (Integer) flowable.value();
+			if(flowable instanceof NumberFlow) {
+				Double i = (Double) flowable.value();
 				if(i > 0) {
 					flowable.value(i - 1);
 					connection.push(flowable);

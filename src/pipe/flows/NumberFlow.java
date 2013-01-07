@@ -1,10 +1,10 @@
 package pipe.flows;
 
-public class IntegerFlow implements IFlowable {
+public class NumberFlow implements IFlowable {
 
-	private Integer value;
+	private Double value;
 	
-	public IntegerFlow(int value) {
+	public NumberFlow(Double value) {
 		this.value = value;
 	}
 	
@@ -15,7 +15,7 @@ public class IntegerFlow implements IFlowable {
 
 	@Override
 	public void value(Object value) {
-		this.value = (Integer)value;
+		this.value = (Double)value;
 	}
 
 }
